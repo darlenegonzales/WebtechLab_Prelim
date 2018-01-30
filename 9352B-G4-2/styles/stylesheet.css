@@ -1,0 +1,173 @@
+html{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+ul img{
+    float: left;
+    padding: 0.50% 15% 0% 2%;
+    display: inline-block;
+    align-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.50%;
+    overflow: hidden;
+    background-color: #5BAEAB;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+nav li a{
+    display: inline-block;
+}
+
+nav li a:hover {
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    color: black;
+    padding: 5px 16px;
+}
+
+.active{
+    color: black;
+    padding: 7px 16px;
+}
+
+header{
+    margin: 0px;
+    padding: 5%;  
+    background-color: #373838;
+    background-image: url(wide.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    color: white;
+    opacity: 0.75;
+    text-align: right;
+    line-height: 30px;
+}
+
+header img{
+    width: 100%
+}
+
+article{
+    padding: 3% 10%;
+}
+
+
+h1{
+    color: black;
+    font-size: 1.5vw;
+    line-height: 0px;
+}
+
+header h2{
+ color: white;
+    font-size: 1.7vw;
+}
+
+big{
+    font-size: 3vw;
+}
+
+header small{
+    font-size: 1.3vw;
+    font-style: italic;
+}
+
+p{
+    font-size: 1.2vw;
+}
+
+.more{
+    font-size: 1vw;
+    color: red;
+}
+
+.quote{
+    background-color: gray;
+    opacity: 0.75;
+    width: 30%;
+    float: right;
+    padding: 1% 2%;
+    margin: 1%;
+    font-style: oblique;
+}
+
+figure img{
+    width: 20%;
+    height:auto;
+    vertical-align: middle;       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{  
+    text-align: center;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+.name{
+    font-size: 1.2vw;
+    color: #56B5B1;
+}
+
+.definition{
+    font-style: italic;
+}
+
+footer{
+    background-color: #5BAEAB;
+    color: white;
+    padding: 1%;
+    height: 8%;
+}
+
+ /* aside
+.bar{
+    background-color: antiquewhite;
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    opacity: 0.75;
+    float: left;
+    z-index: -1;
+}
+
+.bar1{
+    background-color: green;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    opacity: 0.75;
+    float: left;
+    margin-left: 90%;
+    z-index: -1;
+}
+*/
