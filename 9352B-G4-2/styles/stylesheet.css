@@ -1,3 +1,13 @@
+@font-face{
+    font-family:'Tradegothic';
+    src: url(fonts/tradegothic-condeighteen-webfont.woff);
+}
+
+@font-face{
+    font-family:'Roadgeek';
+    src: url(fonts/roadgeek_2005_old_parks-webfont.woff);
+}
+
 html{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -5,27 +15,32 @@ html{
 body{
     margin: 0;
     padding: 0;
+    background-image: url(images/bg-body.jpg);
 }
 
 nav{
     position: fixed;
+    z-index: 3;
     width: 100%;
-    z-index: 2;
+    float: left;
+    box-shadow: 4px 4px #558C89;
 }
 
 ul img{
     float: left;
-    padding: 0.50% 15% 0% 2%;
+    padding: 0.50% 25% 0% 2%;
     display: inline-block;
-    align-content: center;
+    align-content: center;   
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
+    width: 100%;
+    float: left;
     padding: 1.50%;
     overflow: hidden;
-    background-color: #5BAEAB;
+    background: linear-gradient(to right bottom, #558C89, #74AFAD, #DEDEDD);
 }
 
 nav li {
@@ -38,7 +53,8 @@ nav li a {
     text-align: center;
     padding: 7px 16px;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    font-family:'Tradegothic'; 
 }
 
 nav li a{
@@ -46,8 +62,8 @@ nav li a{
 }
 
 nav li a:hover {
-    border-top: 2px dotted black;
-    border-bottom: 2px dotted black;
+    border-top: 2px dotted #558C89;
+    border-bottom: 2px dotted #558C89;
     color: black;
     padding: 5px 16px;
 }
@@ -58,16 +74,19 @@ nav li a:hover {
 }
 
 header{
-    margin: 0px;
-    padding: 5%;  
-    background-color: #373838;
-    background-image: url(wide.jpg);
-    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 10%;  
     height: auto;
-    color: white;
-    opacity: 0.75;
-    text-align: right;
+    width: 100%;
+    color: black;
+    text-align: center;
     line-height: 30px;
+    float: left;
+}
+
+header h1{    
+    font-family:'Tradegothic'; 
+    font-size: 4vw;
 }
 
 header img{
@@ -76,27 +95,15 @@ header img{
 
 article{
     padding: 3% 10%;
+    float: left;
+    font-family:'Roadgeek';
 }
 
 
-h1{
+section h1{
     color: black;
     font-size: 1.5vw;
     line-height: 0px;
-}
-
-header h2{
- color: white;
-    font-size: 1.7vw;
-}
-
-big{
-    font-size: 3vw;
-}
-
-header small{
-    font-size: 1.3vw;
-    font-style: italic;
 }
 
 p{
@@ -138,36 +145,27 @@ figcaption{
     color: #56B5B1;
 }
 
+ol{
+    font-size: 1.3vw;
+    line-height: 35px;
+}
+
 .definition{
-    font-style: italic;
+    font-style: italic;   
+    font-size: 1vw;
 }
 
 footer{
-    background-color: #5BAEAB;
+    background: linear-gradient(to right top, #558C89, #74AFAD, #DEDEDD);
     color: white;
     padding: 1%;
-    height: 8%;
+    height: auto;
+    float: left;
+    width: 100%;
 }
 
- /* aside
-.bar{
-    background-color: antiquewhite;
-    position: absolute;
-    width: 5%;
-    height: 100%;
-    opacity: 0.75;
+footer p{
     float: left;
-    z-index: -1;
+    font-size: 1.2vw;
+    font-family:'Tradegothic'; 
 }
-
-.bar1{
-    background-color: green;
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    opacity: 0.75;
-    float: left;
-    margin-left: 90%;
-    z-index: -1;
-}
-*/
