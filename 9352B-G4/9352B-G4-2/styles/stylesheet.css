@@ -1,0 +1,174 @@
+@font-face{
+    font-family:'Tradegothic';
+    src: url(fonts/tradegothic-condeighteen-webfont.woff);
+}
+
+@font-face{
+    font-family:'Roadgeek';
+    src: url(fonts/roadgeek_2005_old_parks-webfont.woff);
+}
+
+html{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg-white.jpg);
+}
+
+.logo{
+    background-image: url(images/bg-white.jpg);
+    box-shadow: 5px 5px #7E8F7C;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 5;
+}
+
+.logo-a{
+    padding: 1%;
+    opacity: 0.8;
+}
+
+/*-----Navigation Bar-----*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.50%;
+    overflow: hidden;
+    background: linear-gradient(to right bottom, #558C89, #74AFAD);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-size: 1.4vw;
+    font-family:'Tradegothic'; 
+}
+
+nav li a:hover {
+    border-top: 2px dotted #558C89;
+    border-bottom: 2px dotted #558C89;
+    color: black;
+    padding: 5px 16px;
+}
+
+/*-----Article Section------*/
+article{
+    padding: 0;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    width: 100%;
+}
+
+article header h1{
+    margin: 0;
+    padding: 10% 15% 2% 15%;
+    text-align: center;
+    font-size: 4vw;
+}
+
+section{
+    padding: 3% 15% 3% 15%;
+    height: auto;
+}
+
+section h2{
+    font-family:'Tradegothic'; 
+    font-size: 2vw;
+    text-align: center;    
+}
+
+.left-h2{
+    text-align: left;
+    font-size: 1.8vw;
+}
+
+.section-white{
+    background-image: url(images/bg-white.jpg);
+    color: black;
+}
+
+.section-white h2{    
+    color: black;    
+}
+
+.section-black{
+    background-image: url(images/bg-gray.jpg);
+    color: white;
+    opacity: 0.9;
+}
+
+.section-black h2{
+    color: white;
+}
+
+p{
+    font-size: 1.2vw;
+}
+
+q{
+    color: #56B5B1; 
+}
+
+ol{
+    font-size: 1.3vw;
+    line-height: 35px;
+}
+
+.more{
+    font-size: 1vw;
+    color: #56B5B1;
+}
+
+.name {
+    font-size: 1.2vw;
+    color: #56B5B1;
+}
+
+.definition{
+    font-style: italic;   
+    font-size: 1.1vw;
+}
+
+.title{
+    font-size: 3vw;
+}
+
+/*---------Figures--------*/
+figure img{
+    width: 20%;
+    height:auto;
+    vertical-align: middle;       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{  
+    text-align: center;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+/*-----Footer-----*/
+footer{
+    background: linear-gradient(to right top, #558C89, #74AFAD, #DEDEDD);
+    margin: 1% 0% 1% 0%;
+    color: white;
+    height: auto;
+    padding: 1%;
+}
+
+footer p{
+    font-size: 1.2vw;
+    font-family:'Tradegothic'; 
+}
