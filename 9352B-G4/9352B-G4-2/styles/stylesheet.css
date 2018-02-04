@@ -27,7 +27,7 @@ body{
     z-index: 5;
 }
 
-.logo-a{
+.logo-ref{
     padding: 1%;
     opacity: 0.8;
 }
@@ -38,7 +38,7 @@ nav ul {
     margin: 0;
     padding: 0.50%;
     overflow: hidden;
-    background: linear-gradient(to right bottom, #558C89, #74AFAD);
+    background: linear-gradient(to right top, #558C89, #74AFAD, #DEDEDD);
 }
 
 nav li {
@@ -56,38 +56,89 @@ nav li a {
 }
 
 nav li a:hover {
-    border-top: 2px dotted #558C89;
-    border-bottom: 2px dotted #558C89;
+    border-top: 2px dotted gray;
+    border-bottom: 2px dotted gray;
     color: black;
     padding: 5px 16px;
 }
 
 /*-----Article Section------*/
+.cover{
+    position: relative;
+    text-align: center;
+}
+
+.title-topcentered-gray{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #797979;
+    font-size: 4vw;
+    padding: 0%;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.title-topcentered-white{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F2F0F0;
+    font-size: 4vw;
+    padding: 1%;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.title-centered-gray{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #797979;
+    font-size: 4vw;
+    padding: 0%;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.title-centered-white{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F2F0F0;
+    font-size: 5vw;
+    padding: 1%;
+}
+
 article{
     padding: 0;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    width: 100%;
-}
-
-article header h1{
-    margin: 0;
-    padding: 10% 15% 2% 15%;
-    text-align: center;
-    font-size: 4vw;
 }
 
 section{
-    padding: 3% 15% 3% 15%;
+    padding: 7% 15% 3% 15%;
     height: auto;
+    float: left;
+    width: 70%;
+    text-align: justify;
 }
 
 section h2{
     font-family:'Tradegothic'; 
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;    
 }
 
 .left-h2{
+    text-align: left;
+    font-size: 2.5vw;
+}
+
+.left-h2-small{
     text-align: left;
     font-size: 1.8vw;
 }
@@ -97,14 +148,14 @@ section h2{
     color: black;
 }
 
-.section-white h2{    
-    color: black;    
-}
-
 .section-black{
     background-image: url(images/bg-gray.jpg);
     color: white;
     opacity: 0.9;
+}
+
+.section-white h2{    
+    color: black;    
 }
 
 .section-black h2{
@@ -115,8 +166,16 @@ p{
     font-size: 1.2vw;
 }
 
-q{
+h6{
+    font-size: 1vw;
+}
+
+q.blue-quote{
     color: #56B5B1; 
+}
+
+q.white-quote{
+    color: #F2F0F0;
 }
 
 ol{
@@ -124,27 +183,52 @@ ol{
     line-height: 35px;
 }
 
-.more{
-    font-size: 1vw;
-    color: #56B5B1;
-}
-
-.name {
+.name{
     font-size: 1.2vw;
     color: #56B5B1;
 }
 
-.definition{
+.list-explanation{
     font-style: italic;   
     font-size: 1.1vw;
 }
 
-.title{
-    font-size: 3vw;
+b.emphasize{
+    color: #56B5B1;
+}
+small.quote-credit{
+    float: right;
+    color: #F2F0F0;
 }
 
-/*---------Figures--------*/
-figure img{
+/*---------Figures/Images--------*/
+.cover-img{
+    width: 100%;
+}
+
+.photos img{
+    width: 43%;
+    float: left;
+    background-color: #558C89;
+    padding: 1%;
+    margin: 2%;
+}
+
+.photos{
+    margin-top: 5%;
+    float: left;
+}
+
+.history-img img{
+    width: 20%;
+    height:auto;
+    vertical-align: middle;       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.be-aware-img img{
     width: 20%;
     height:auto;
     vertical-align: middle;       
@@ -161,14 +245,43 @@ figcaption{
 
 /*-----Footer-----*/
 footer{
-    background: linear-gradient(to right top, #558C89, #74AFAD, #DEDEDD);
+    background: linear-gradient(to right bottom, #558C89, #74AFAD, #DEDEDD);
     margin: 1% 0% 1% 0%;
     color: white;
     height: auto;
-    padding: 1%;
+    padding-left: 2%;
+    float: left;
+    width: 98%;
 }
 
-footer p{
+footer h5{
     font-size: 1.2vw;
     font-family:'Tradegothic'; 
+}
+
+
+/*---Aside----*/
+aside{
+    background-color: #558C89;
+    opacity: 0.8;
+    height: auto;
+    width: auto;
+    padding: 2%;
+    font-size: 1.1vw;
+    font-style: italic;
+    clear: both;    
+    box-shadow: 3px 3px #7E8F7C;
+}
+.right-aside{
+    width: 50%;
+    float: right;
+    margin-right: -15%;
+    margin-left: 3%;    
+}
+
+.left-aside{
+    width: auto;
+    float: left;
+    margin-left: -15%;
+    margin-right: 3%;    
 }
