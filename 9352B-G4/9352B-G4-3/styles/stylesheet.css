@@ -236,6 +236,15 @@ small.quote-credit{
     margin-right: auto;
 }
 
+.be-involved-img img{
+    width: 90%;
+    height:auto;
+    vertical-align: middle;       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 figcaption{  
     text-align: center;
     font-style: italic;
