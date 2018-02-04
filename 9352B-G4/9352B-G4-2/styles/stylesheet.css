@@ -216,7 +216,6 @@ small.quote-credit{
 
 .photos{
     margin-top: 5%;
-    float: left;
 }
 
 .history-img img{
@@ -237,6 +236,15 @@ small.quote-credit{
     margin-right: auto;
 }
 
+.be-involved-img img{
+    width: 90%;
+    height:auto;
+    vertical-align: middle;       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 figcaption{  
     text-align: center;
     font-style: italic;
@@ -245,7 +253,7 @@ figcaption{
 
 /*-----Footer-----*/
 footer{
-    background: linear-gradient(to right bottom, #558C89, #74AFAD, #DEDEDD);
+    background: linear-gradient(to right top, #558C89, #74AFAD, #DEDEDD);
     margin: 1% 0% 1% 0%;
     color: white;
     height: auto;
