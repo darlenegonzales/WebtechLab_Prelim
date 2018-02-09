@@ -15,6 +15,14 @@
         font-weight: normal;
         font-style: normal;
 }
+
+@font-face {
+        font-family: "Vollkorn-Bold";
+        src: url('fonts/Vollkorn-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
 html{
     margin: 0;
     padding: 0;
@@ -26,26 +34,62 @@ body{
     font-family: "Proxima Nova";
 }
 
-.logo-ref{
-    padding: 1% 3% 1% 15%; 
-    float: left;
-    margin: 0 ;
-    background: #74AFAD;
+article{
+    position: relative; 
+    padding-top: 5%;
 }
 
-img.logo-ref{
+section{
+    padding: 5.75% 15% 3%;
+    position: relative;
+    float: left;
+}
+
+p{
+    font-size: 1.5vw;
+    text-align: justify;
+    line-height: 30px;
+}
+
+h2{
+    font-family: "Lato Black";
+    font-size: 2.8vw;
+    text-align: center;
+    border-bottom: 4px solid #558C89;
+    width: 60%;
+    margin: 0;
+    text-align: left;
+}
+
+h4{
+    font-size: 1.5vw;
+    margin-bottom: -10px;
+    margin-top: 40px;
+}
+
+header.logo::before{
+    content: url(images/logo.png);
+    float: left;
     display: inline-block;
-    
-    height: 50px;
+    font-size: 2vw;
+    padding: 0.25% 5% 0.25% 5%;
+    background: #fafafa;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+}
+
+.logo img{
+    display: none;
 }
 
 .logo{
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
-    background: #ECECEA;
+    background: #1e2d3b;
     box-shadow: 1px 1px 5px 3px #ccc;
     margin: 0 auto;
-    width: 100%;        
+    width: 100%;  
     z-index: 3;
     position: fixed;
 }
@@ -54,7 +98,7 @@ img.logo-ref{
     display: inline-block;
     text-align: center;
     float: right;
-    padding: 1%;
+    padding: 0.50%;
 }
 
 .navigation ul li{
@@ -64,19 +108,14 @@ img.logo-ref{
 .navigation ul li a{
     text-decoration: none;
     padding: 10px 15px;
-    color: #74AFAD;
-    font-weight: 600;
+    color: #fafafa;
+    font-weight: 500;
     font-size: 1.1vw;
 }
 
 .navigation ul li a:hover{
     border-bottom: 3px solid #558C89;
     color: #558C89;
-}
-
-article{
-    position: relative; 
-    padding-top: 5.75%;
 }
 
 .cover img{
@@ -91,87 +130,421 @@ article{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	text-align: center;
-    opacity: 0.8;
-    height: 50vh;
+    height:100vh;
 }
 
-.title-topcentered-gray{
+.cover h1{
     font-size: 6vw;
     text-align: center;
-    color: white;
     z-index: 2;
     font-family: "Lato Black";
     padding-top: 10%;
     padding-bottom: 10%;
-    border: 10px solid white;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.title-centered-gray{
-    font-size: 6vw;
-    text-align: center;
-    color: black;
-    font-family: 'Lato', sans-serif;
-    z-index: 2;
-    font-family: "Lato Black";
+.cover h1.title-topcentered-gray{
+    color: white;
+    border: 10px solid white;
 }
 
+.cover h1.title-centered-gray{
+    color: #4B4A4A;
+    border: 10px solid #4B4A4A;
+}
 
-section{
-    padding: 10.75% 15% 10.75%;
+.cover h1.title-centered-white{
+    color: white;
+    border: 10px solid white;
+}
+
+#gender-equality img{
+    width: 45%;
+    float: left;
+    margin: 2%;
+    box-shadow: 1px 1px 5px 3px #ccc;
+}
+
+#gender-equality h6.credit-photo{
+    display: none;
+}
+
+#gender-equality figure::after{
+    content: "Photos by Kimberly Lopez";
+    font-size: 1.3vw;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#mission-vision{
+    background-image: url(images/bg01.jpg);
+    background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    text-align: center;
     position: relative;
+    float: left;
 }
 
-section.section-black{
-    background: gray;
-    color: ghostwhite;
+#mission-vision p{
+    background: white;
+    color: black;
+    width: 50%;
+    float: right;
+    padding: 2%;
+    opacity: 0.7;
 }
 
-p{
-    font-size: 1.5vw;
-    text-align: justify;
-    line-height: 30px;
-}
-
-h2{
-    font-family: "Lato Black";
-    font-size: 2vw;
-    text-align: center;
-}
-
-h2.left-h2{
+#mission-vision h2{
+    float: right;
     text-align: left;
 }
 
-h4{
+#vision-mission{
+    background-image: url(images/bg01.jpg);
+    background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+#vision-mission p{
+    background: white;
+    color: black;
+    width: 50%;
+    float: left;
+    padding: 2%;
+    opacity: 0.7;
+    margin-left: -10%;
+}
+
+#vision-mission h2{
+    margin-left: -10%;
+    margin-right: 10%;
+    float: left;
+    text-align: left;
+}
+
+#be-involved{
+    background-image: url(images/bg02.jpg);
+    background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#be-involved h2{
+    margin-bottom: 2%;
+    float: right;
+}
+
+#be-involved h2.left-h2-small{
     font-size: 1.5vw;
-    margin-bottom: -10px;
-    margin-top: 40px;
+    border-bottom: 0;
+    color: black;
+    background: white;
+    opacity: 0.7;
+    padding: 2%;
+    margin: 0;
+}
+
+#be-involved p{
+    float: right;
+    width: 60%!important;
+    background: white;
+    color: black;
+    opacity: 0.7;
+    padding: 2%;
+    font-size: 1.4vw;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+#be-involved p.list-explanation{
+    float: right;
+    width: 57.25%!important;
+    background: white;
+    color: black;
+    opacity: 0.7;
+    padding: 2%;
+    font-size: 1.2vw;
+    line-height: 20px;
+    margin: 0;
+}
+
+#be-involved ul.list li{
+    float: right;
+    width: 60%!important;
+    background: white;
+    color: green;
+    padding: 2%;
+    opacity: 0.7;
+    text-align: left;
+    font-size: 1.5vw;
+    list-style-type: none;
+    font-weight: 600;
+    margin: 0;
+}
+
+#be-involved ul.sub-list li{
+    float: right;
+    width: 60%!important;
+    background: white;
+    color: green;
+    padding: 2% 2% 1%;
+    opacity: 0.7;
+    text-align: left;
+    font-size: 1.1vw;
+    list-style-type: none;
+    font-weight: 600;
+    line-height: 10px;
+    margin: 0;
+    font-style: italic;
+}
+
+.be-involved-img img{
+    width: 100%;    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+figure.be-involved-img{
+    float: right;
+    width: 61.25%;
+    margin: 0;
+}
+
+figure.be-involved{
+    background: white;
+}
+
+#be-involved h6.credit-photo{
+    float: right;
+    width: 98%!important;
+    background: white;
+    color: black;
+    margin: 0;
+    opacity: 0.7;
+    padding: 1%;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#be-involved figcaption{
+    float: right;
+    width: 98%!important;
+    background: white;
+    color: black;
+    opacity: 0.7;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    font-weight: 600;
+}
+
+#be-involved ol{
+    background: white;
+    color: black;
+    opacity: 0.7;
+    padding: 1%;
+    margin-right: -15%;
+    margin-top: 0;
+    width: 50%;
+    float: right;
+    font-size: 1.4vw;
+}
+
+#be-aware{
+    background: #eeeeee;
 }
 
 b.emphasize{
     color: #558C89;
 }
 
-aside.right-aside{
+b.name{
+    color: #558C89;
+}
+
+q.blue-quote{
+    color: #558C89;
+}
+
+aside{
     background: #74AFAD;
     box-shadow: 1px 1px 3px 2px #ccc;
     padding: 1%;
     font-style: italic;
     color: #FFFFFF;
+    
+}
+
+aside.right-aside{
     width: 60%;
     float: right;
     margin-right: -10%;
     margin-left: 3%;
+    margin-top: 2%;
 }
+
+aside.left-aside{
+    width: 60%;
+    float: left;
+    margin-left: -10%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
 small.quote-credit{
     float: right;
 }
 
+figure.churches img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%; 
+    box-shadow: 1px 1px 5px 3px #ccc;
+}
 
-figure img{
+.churches h6.credit-photo{
+    font-size: 1vw;
+    display: block;
+    margin: auto 15%;
+    text-align: left;
+    font-weight: 100;
+}
+
+.churches figcaption{
+    text-align: left;
+    margin: auto 15%;
+    font-size: 1.5vw;
+}
+
+.history-img img{
     width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 1px 1px 5px 3px #ccc;
+}
+
+.history-img h6.credit-photo{
+    font-size: 1vw;
+    display: block;
+    margin: auto 35%;
+    text-align: left;
+    font-weight: 100;
+}
+
+.history-img figcaption{
+    text-align: left;
+    margin: auto 35%;
+    font-size: 1.2vw;
+}
+
+figure.be-aware-img{
+    width: 40%;
+    display: block;
+    float: left;
+}
+
+.be-aware-img img{
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 5px 3px #ccc;
+}
+
+.be-aware-img h6.credit-photo{
+    font-size: 1vw;
+    display: block;
+    margin: auto 0%;
+    text-align: left;
+}
+
+.be-aware-img figcaption{
+    text-align: left;
+    margin: auto -0%;
+    font-size: 1.2vw;
+}
+
+
+ol.list{
+    font-size: 1.5vw;
+    text-align: left;
+    font-weight: 600;
+}
+
+ol.list li{
+    margin: 2%;    
+    padding: 1%;
+}
+
+#about-us p{
+    font-size: 1.1vw;
+    float: right;
+    line-height: 20px;
+    margin-top: 5%;
+    width: 40%
+}
+
+#about-us figure img{
+    float: left;
+    width: 60%;
+    margin:0;
+    margin-left: -5%;
+}
+
+#about-us h6{
+    display: none;
+}
+
+#about-us nav::before{
+    content: "View our other page:";
+    float: left;
+    margin: 8% 5% 2%;
+    font-size: 1vw;
+}
+
+nav.our-page-nav a{
+    margin: 0;
+    margin-left: 5%;
+}
+
+nav.our-page-nav img{
+    width: 20%;
+}
+
+footer{
+    float: left;
+    background: #1e2d3b;;
+    width: 100%;
+}
+
+footer h5{    
+    margin: 2%;
+    font-size: 1vw;
+    color: #fafafa;
+    font-weight: 100;
 }
