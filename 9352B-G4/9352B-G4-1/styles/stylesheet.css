@@ -40,7 +40,6 @@ article{
 }
 
 section{
-    padding: 5.75% 15% 3%;
     position: relative;
     float: left;
 }
@@ -56,7 +55,7 @@ h2{
     font-size: 2.8vw;
     text-align: center;
     border-bottom: 4px solid #558C89;
-    width: 60%;
+    width: 55%;
     margin: 0;
     text-align: left;
 }
@@ -67,20 +66,21 @@ h4{
     margin-top: 40px;
 }
 
+.logo img{
+    display: none;
+}
+
 header.logo::before{
     content: url(images/logo.png);
     float: left;
     display: inline-block;
-    font-size: 2vw;
-    padding: 0.25% 5% 0.25% 5%;
+    padding: 0;
     background: #fafafa;
     margin-top: auto;
     margin-bottom: auto;
     height: auto;
-}
-
-.logo img{
-    display: none;
+    height: 60px;
+    padding: 10px 70px 0px 70px;
 }
 
 .logo{
@@ -92,6 +92,7 @@ header.logo::before{
     width: 100%;  
     z-index: 3;
     position: fixed;
+    height:70px;
 }
 
 .navigation{
@@ -131,6 +132,7 @@ header.logo::before{
 	background-repeat: no-repeat;
 	text-align: center;
     height:100vh;
+    margin: auto; 
 }
 
 .cover h1{
@@ -159,6 +161,74 @@ header.logo::before{
 .cover h1.title-centered-white{
     color: white;
     border: 10px solid white;
+}
+
+b.emphasize{ 
+    color: #558C89; 
+}
+
+b.name{ 
+    color: #558C89; 
+}
+
+q.blue-quote{ 
+    color: #558C89; 
+}
+
+q.white-quote{ 
+    font-size: 1.2vw; 
+}
+
+aside{
+    background: #74AFAD;
+    box-shadow: 1px 1px 3px 2px #ccc;
+    padding: 1%;
+    font-style: italic;
+    color: #FFFFFF;    
+}
+
+aside.right-aside{
+    width: 60%;
+    float: right;
+    margin-right: -10%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+aside.left-aside{
+    width: 60%;
+    float: left;
+    margin-left: -10%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+small.quote-credit{
+    float: right;
+    font-size: 1.1vw;
+}
+
+ol.list{
+    font-size: 1.5vw;
+    text-align: left;
+    font-weight: 600;
+}
+
+ol.list li{
+    margin: 2%;    
+    padding: 1%;
+}
+
+#environment{
+    padding: 8% 15% 3%;
+}
+
+#religious-tolerance{
+    padding: 8% 15% 3%;
+}
+
+#gender-equality{
+    padding: 8% 15% 3%;
 }
 
 #gender-equality img{
@@ -193,6 +263,7 @@ header.logo::before{
     text-align: center;
     position: relative;
     float: left;
+    padding: 8% 5% 3%;
 }
 
 #mission-vision p{
@@ -202,9 +273,11 @@ header.logo::before{
     float: right;
     padding: 2%;
     opacity: 0.7;
+    font-weight: 600;
 }
 
 #mission-vision h2{
+    width: 55%;
     float: right;
     text-align: left;
 }
@@ -220,21 +293,22 @@ header.logo::before{
     text-align: center;
     position: relative;
     float: left;
+    padding: 8% 5% 3%;
 }
 
 #vision-mission p{
     background: white;
     color: black;
-    width: 50%;
+    width: 40%;
     float: left;
     padding: 2%;
     opacity: 0.7;
-    margin-left: -10%;
+    font-weight: 600;
 }
 
 #vision-mission h2{
-    margin-left: -10%;
-    margin-right: 10%;
+    width: 40%;
+    margin-right: 30%;
     float: left;
     text-align: left;
 }
@@ -248,11 +322,13 @@ header.logo::before{
     color: white;
     background-color: black;
     text-align: center;
+    padding: 8% 5% 3% 50%;
 }
 
 #be-involved h2{
     margin-bottom: 2%;
-    float: right;
+    float: left;
+    width: 80%;
 }
 
 #be-involved h2.left-h2-small{
@@ -261,75 +337,83 @@ header.logo::before{
     color: black;
     background: white;
     opacity: 0.7;
+    width: 96%;
     padding: 2%;
     margin: 0;
 }
 
 #be-involved p{
     float: right;
-    width: 60%!important;
+    width: 100%;
     background: white;
     color: black;
     opacity: 0.7;
-    padding: 2%;
     font-size: 1.4vw;
     line-height: 20px;
+    font-weight: 600;    
     margin: 0;
-    font-weight: 600;
+    width: 96%;
+    padding: 2%;
 }
 
 #be-involved p.list-explanation{
     float: right;
-    width: 57.25%!important;
     background: white;
     color: black;
     opacity: 0.7;
-    padding: 2%;
     font-size: 1.2vw;
     line-height: 20px;
     margin: 0;
 }
 
-#be-involved ul.list li{
+#be-involved ul.list{
     float: right;
-    width: 60%!important;
     background: white;
     color: green;
-    padding: 2%;
     opacity: 0.7;
     text-align: left;
     font-size: 1.5vw;
     list-style-type: none;
     font-weight: 600;
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-#be-involved ul.sub-list li{
+#be-involved ul.sub-list{
     float: right;
-    width: 60%!important;
     background: white;
     color: green;
-    padding: 2% 2% 1%;
     opacity: 0.7;
     text-align: left;
     font-size: 1.1vw;
-    list-style-type: none;
     font-weight: 600;
     line-height: 10px;
-    margin: 0;
     font-style: italic;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#be-involved ul.sub-list li{
+    margin-left: 4%;
+    margin-bottom: 2%;
+    list-style-type: none;
+}
+
+#be-involved ul.list li{
+    margin: 2%;
+    list-style-type: none;
 }
 
 .be-involved-img img{
-    width: 100%;    
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;   
     display: block;
 }
 
 figure.be-involved-img{
     float: right;
-    width: 61.25%;
+    width: 100%;
     margin: 0;
 }
 
@@ -339,129 +423,46 @@ figure.be-involved{
 
 #be-involved h6.credit-photo{
     float: right;
-    width: 98%!important;
+    width: 100%;
     background: white;
     color: black;
     margin: 0;
     opacity: 0.7;
-    padding: 1%;
     font-size: 1vw;
     font-weight: 600;
 }
 
 #be-involved figcaption{
     float: right;
-    width: 98%!important;
     background: white;
     color: black;
     opacity: 0.7;
-    padding-left: 1%;
-    padding-right: 1%;
     padding-bottom: 5%;
     font-weight: 600;
+    width: 100%;
+    font-size: 1.4vw;
 }
 
 #be-involved ol{
     background: white;
     color: black;
     opacity: 0.7;
-    padding: 1%;
-    margin-right: -15%;
+    padding: 2%;
     margin-top: 0;
-    width: 50%;
+    width: 96%;
     float: right;
     font-size: 1.4vw;
 }
 
+#be-involved ol li{
+    margin-left: 4%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 #be-aware{
     background: #eeeeee;
-}
-
-b.emphasize{
-    color: #558C89;
-}
-
-b.name{
-    color: #558C89;
-}
-
-q.blue-quote{
-    color: #558C89;
-}
-
-aside{
-    background: #74AFAD;
-    box-shadow: 1px 1px 3px 2px #ccc;
-    padding: 1%;
-    font-style: italic;
-    color: #FFFFFF;
-    
-}
-
-aside.right-aside{
-    width: 60%;
-    float: right;
-    margin-right: -10%;
-    margin-left: 3%;
-    margin-top: 2%;
-}
-
-aside.left-aside{
-    width: 60%;
-    float: left;
-    margin-left: -10%;
-    margin-right: 3%;
-    margin-top: 2%;
-}
-
-small.quote-credit{
-    float: right;
-}
-
-figure.churches img{
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%; 
-    box-shadow: 1px 1px 5px 3px #ccc;
-}
-
-.churches h6.credit-photo{
-    font-size: 1vw;
-    display: block;
-    margin: auto 15%;
-    text-align: left;
-    font-weight: 100;
-}
-
-.churches figcaption{
-    text-align: left;
-    margin: auto 15%;
-    font-size: 1.5vw;
-}
-
-.history-img img{
-    width: 30%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    box-shadow: 1px 1px 5px 3px #ccc;
-}
-
-.history-img h6.credit-photo{
-    font-size: 1vw;
-    display: block;
-    margin: auto 35%;
-    text-align: left;
-    font-weight: 100;
-}
-
-.history-img figcaption{
-    text-align: left;
-    margin: auto 35%;
-    font-size: 1.2vw;
+    padding: 8% 15% 3%;
 }
 
 figure.be-aware-img{
@@ -489,16 +490,62 @@ figure.be-aware-img{
     font-size: 1.2vw;
 }
 
-
-ol.list{
-    font-size: 1.5vw;
-    text-align: left;
-    font-weight: 600;
+#history{
+    padding: 8% 15% 3%;
 }
 
-ol.list li{
-    margin: 2%;    
-    padding: 1%;
+.history-img img{
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 1px 1px 5px 3px #ccc;
+}
+
+.history-img h6.credit-photo{
+    font-size: 1vw;
+    display: block;
+    margin: auto 35%;
+    text-align: left;
+    font-weight: 100;
+}
+
+.history-img figcaption{
+    text-align: left;
+    margin: auto 35%;
+    font-size: 1.2vw;
+}
+
+#laws{
+    padding: 8% 15% 3%;
+}
+
+figure.churches img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%; 
+    box-shadow: 1px 1px 5px 3px #ccc;
+}
+
+.churches h6.credit-photo{
+    font-size: 1vw;
+    display: block;
+    margin: auto 15%;
+    text-align: left;
+    font-weight: 100;
+}
+
+.churches figcaption{
+    text-align: left;
+    margin: auto 15%;
+    font-size: 1.5vw;
+}
+
+#about-us{
+    padding: 8% 15% 3%;
 }
 
 #about-us p{
