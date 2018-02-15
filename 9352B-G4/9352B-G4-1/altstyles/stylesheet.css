@@ -1,0 +1,300 @@
+@font-face{
+    font-family: "Habel Demo";
+    src: url("font/HabelDemo/HabelDemo.otf");
+}
+
+@font-face{
+    font-family: Paris;
+    src: url(font/Parisienne/Parisienne-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Alex Brush";
+    src: url("font/AlexBrush/AlexBrush-Regular.ttf");
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;    
+    text-align: justify;
+    font-family: "Habel Demo";
+}
+
+p{
+    font-size: 2vw;
+}
+
+.logo-ref{
+    display: none;
+}
+
+.logo{
+    display: inline-block;
+    background-color: black;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;        
+    z-index: 3;
+    position: fixed;
+    height: 70px;
+}
+
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background: black;
+    margin: 0 auto;
+    width: 100%;  
+    z-index: 3;
+    position: fixed;
+    height:70px;
+}
+
+.navigation{
+    display: inline-block;
+    text-align: center;
+    float: right;
+    padding: 0.50%;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+.navigation ul li a:hover{
+    border-bottom: 3px solid #fafafa;
+    color: yellow;
+}
+
+article{
+    position: relative; 
+    padding-top: 70px;
+}
+
+.cover img{
+    display: none;
+}
+
+.cover{
+    background-image: url(images/candle2.png);
+    padding: 8em 0 9em 0;
+    background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+    height: 60vh;
+    background-color: #F5DEB3;
+}
+
+.title-topcentered-gray{
+    font-size: 8vw;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-family: "Habel Demo";
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #8B8989;
+}
+
+section{
+    float: left;
+}
+
+footer{
+    float: left;
+}
+
+section.section-white h2{
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Alex Brush";
+    margin-right: 80%;
+    border-bottom: 3px dotted black;
+    width: 60%;
+    text-align: left;
+    float: left;
+}
+
+section.section-white p{
+    margin-right: 15%;
+}
+
+section.section-white li{
+    margin-right: 15%;
+    font-size: 1.5vw;
+}
+
+section.section-white{    
+    background-image: url(images/pray.png);
+    background-attachment: fixed;  
+    background-color: white;
+    background-size: cover;
+    font-size: 1.5vw;
+    padding: 5% 20% 5% 5%;
+    position: relative;
+    color: black;  
+}
+
+section.section-black{
+    background-image: url(images/cross.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    font-size: 2vw;
+    position: relative;    
+    color: white;
+    padding: 5% 5% 5% 35%;
+}
+
+section.section-black h2{
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Alex Brush";
+    margin-right: 80%;
+    border-bottom: 3px dotted white;
+    width: 60%;
+    text-align: left;
+    float: left;
+}
+
+aside.right-aside{
+    font-family: Paris;
+    background-color: #984b43;
+    font-size: 1vw;
+    padding: 2%;
+    color: white;
+    margin-right: 15%;
+}
+
+#laws h4{
+    color: #190061
+}
+
+#be-aware p{
+    text-indent: 10mm;
+}
+
+.churches img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.churches h6, figcaption{
+    text-align: center;
+}
+
+.churches h6{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.churches figcaption{
+    font-size: 1.7vw;
+}
+
+#be-involved p{
+    color: black;
+    font-size: 2vw;
+}
+
+#about-us{
+    width: 60%;
+}
+
+#about-us h2{
+    float: left;
+}
+
+#about-us p{
+    font-size: 1.2vw;
+    float: left;
+    margin-top: 10%;
+}
+
+#about-us h6{
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 0;
+    margin-top: 10%;
+    font-weight: 100;
+    font-size: 1.1vw;
+}
+
+#about-us figure img{
+    width: 75%;
+    height: auto;
+    display: block;
+    padding: 2%;
+    float: right;
+    margin-right: -10%;
+}
+
+#about-us .our-page-nav img{
+    background-color: white;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+}
+
+.emphasize{
+    color: #190061;
+    font-size: 2vw;
+}
+
+.white-quote{
+    font-size: 1.6vw;
+}
+
+.quote-credit{
+    padding-left: 80%;
+    font-size: 1.5vw;
+}
+
+h2.left-h2{
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Alex Brush";
+    margin-right: 80%;
+    border-bottom: 3px dotted black;
+    color: black;
+    text-align: left;
+    float:left;
+}
+
+h4{
+    color: black;
+    font-size: 2vw;
+    margin-bottom: -2%;
+}
+footer{
+    width: 100%;
+}
+
+footer h5{
+    font-size: 1.2vw;
+    margin: 1%;
+}
