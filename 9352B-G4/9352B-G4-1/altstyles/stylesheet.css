@@ -90,7 +90,7 @@ article{
 .cover{
     background-image: url(images/b01.png);
     padding: 8em 0 9em 0;
-    background-size: cover;
+    background-size: 100% 100%;
 	background-position: bottom;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -103,6 +103,21 @@ article{
     font-size: 8vw;
     text-align: center;
     color: white;
+    z-index: 2;
+    font-family: "Habel Demo";
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #8B8989;
+}
+
+.title-centered-white{
+    font-size: 7vw;
+    font: white;
+    text-align: center;
     z-index: 2;
     font-family: "Habel Demo";
     padding-top: 5%;
@@ -156,7 +171,7 @@ section.section-white{
 section.section-black{
     background-image: url(images/b02.png);
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     font-size: 2vw;
@@ -185,7 +200,20 @@ aside.right-aside{
     margin-right: 15%;
 }
 
+aside.left-aside{
+    font-family: Paris;
+    background-color: #984b43;
+    font-size: 1vw;
+    padding: 2%;
+    color: white;
+    margin-right: 15%;
+}
+
 #laws h4{
+    color: #190061
+}
+
+#laws h3{
     color: #190061
 }
 
@@ -270,7 +298,7 @@ aside.right-aside{
 }
 
 .quote-credit{
-    padding-left: 80%;
+    padding-left: 70%;
     font-size: 1.5vw;
 }
 
