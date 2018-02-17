@@ -156,7 +156,7 @@ section.section-white{
 section.section-black{
     background-image: url(images/b02.png);
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     font-size: 2vw;
