@@ -129,6 +129,21 @@ article{
     color: #8B8989;
 }
 
+.title-centered-gray{
+    font-size: 7vw;
+    font: white;
+    text-align: center;
+    z-index: 2;
+    font-family: "Habel Demo";
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #8B8989;
+}
+
 section{
     float: left;
 }
@@ -137,7 +152,7 @@ footer{
     float: left;
 }
 
-section.section-white h2{
+section.section-white h2:not(.left-h2-small){
     text-align: center;
     font-size: 4vw;
     font-family: "Alex Brush";
@@ -228,9 +243,63 @@ aside.left-aside{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    border-radius: 50%;
 }
 
+.photos img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+.history-img img{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+.be-aware-img img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+.be-involved-img img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+
 .churches h6, figcaption{
+    text-align: center;
+}
+
+.photos h6, figcaption{
+    text-align: center;
+}
+
+.be-aware-img h6, figcaption{
+    text-align: center;
+}
+
+.be-involved-img h6, figcaption{
     text-align: center;
 }
 
@@ -240,10 +309,40 @@ aside.left-aside{
     font-weight: 100;
 }
 
+.photos h6{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.be-aware-img h6{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.be-involved-img h6{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+
 .churches figcaption{
     font-size: 1.7vw;
 }
 
+.photos figcaption{
+    font-size: 1.7vw;
+}
+
+.be-aware-img figcaption{
+    font-size: 1.7vw;
+}
+
+.be-involved-img figcaption{
+    font-size: 1.7vw;
+}
 #be-involved p{
     color: black;
     font-size: 2vw;
