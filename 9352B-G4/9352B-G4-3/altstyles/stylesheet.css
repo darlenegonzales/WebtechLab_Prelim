@@ -102,7 +102,20 @@ article{
 .title-topcentered-gray{
     font-size: 8vw;
     text-align: center;
-    color: white;
+    color: #8B8989;
+    z-index: 2;
+    font-family: "Habel Demo";
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.title-centered-white{
+    font-size: 7vw;
+    font: white;
+    text-align: center;
     z-index: 2;
     font-family: "Habel Demo";
     padding-top: 5%;
@@ -113,8 +126,8 @@ article{
     margin-bottom: auto;
     color: #8B8989;
 }
-
-.title-centered-white{
+    
+.title-centered-gray{
     font-size: 7vw;
     font: white;
     text-align: center;
@@ -130,6 +143,9 @@ article{
 }
 
 section{
+    color: #8B8989;
+}
+
     float: left;
 }
 
@@ -209,6 +225,14 @@ aside.left-aside{
     margin-right: 15%;
 }
 
+.name{
+    color: #190061;
+}
+
+.blue-quote{
+    color: yellow;
+}
+
 #laws h4{
     color: #190061
 }
@@ -228,6 +252,17 @@ aside.left-aside{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    border-radius: 50%;
+}
+
+.history-img img{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 50%;
 }
 
 .be-aware-img img{
@@ -237,6 +272,7 @@ aside.left-aside{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    border-radius: 50%;
 }
 
 .be-involved-img img{
@@ -246,10 +282,24 @@ aside.left-aside{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    border-radius: 50%;
 }
 
+.photos img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 50%;
+}
 
 .churches h6, figcaption{
+    text-align: center;
+}
+
+.photos h6, figcaption{
     text-align: center;
 }
 
@@ -261,7 +311,25 @@ aside.left-aside{
     text-align: center;
 }
 
+.history-img h6, figcaption{
+    text-align: center;
+}
+
+
 .churches h6{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.history-img h6{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+
+.photos h6{
     margin: 0;
     font-size: 1.2vw;
     font-weight: 100;
@@ -284,6 +352,14 @@ aside.left-aside{
     font-size: 1.7vw;
 }
 
+.history-img figcaption{
+    font-size: 1.7vw;
+}
+
+.photos figcaption{
+    font-size: 1.7vw;
+}
+
 .be-aware-img figcaption{
     font-size: 1.7vw;
 }
@@ -298,6 +374,8 @@ aside.left-aside{
 
 #about-us{
     width: 60%;
+    height: 600px;
+    
 }
 
 #about-us h2{
