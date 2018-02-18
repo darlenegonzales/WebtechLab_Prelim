@@ -42,6 +42,19 @@ p{
     display: none;
 }
 
+header.logo::before{
+    content: url(images/logo.png);
+    float: left;
+    display: inline-block;
+    padding: 0;
+    background: #fafafa;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    height: 70px;
+    padding: 0px 70px 0px 70px;
+}
+
 .logo{
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
@@ -73,8 +86,8 @@ p{
 }
 
 .navigation ul li a:hover{
-    border-bottom: 3px solid #000000;
-    color: #000000;
+    border-bottom: 3px solid #FBA100;
+    color: #FBA100;
 }
 
 article{
@@ -95,13 +108,13 @@ article{
 	background-repeat: no-repeat;
 	text-align: center;
     height: 60vh;
-    background-color: #efefef;
+    background-color: #c5c1c0;
 }
 
 .title-topcentered-gray{
     font-size: 8vw;
-    text-align: center;
-    color: #8B8989;
+    text-align: right;
+    color: #000000;
     z-index: 2;
     font-family: "Habel Demo";
     padding-top: 5%;
@@ -115,7 +128,7 @@ article{
 .title-centered-white{
     font-size: 7vw;
     font: white;
-    text-align: center;
+    text-align: right;
     z-index: 2;
     font-family: "Habel Demo";
     padding-top: 5%;
@@ -124,13 +137,13 @@ article{
     margin-right: 5%;
     margin-top: auto;
     margin-bottom: auto;
-    color: #8B8989;
+    color: #000000;
 }
     
 .title-centered-gray{
     font-size: 7vw;
     font: white;
-    text-align: center;
+    text-align: right;
     z-index: 2;
     font-family: "Habel Demo";
     padding-top: 5%;
@@ -139,18 +152,18 @@ article{
     margin-right: 5%;
     margin-top: auto;
     margin-bottom: auto;
-    color: #8B8989;
+    color: #000000;
 }
 
 section{
-    color: #8B8989;
+    color: #8B8989;  
 }
 
 footer{
     float: left;
 }
 
-section.section-white h2{
+section.section-white h2:not(.left-h2-small){
     text-align: center;
     font-size: 4vw;
     font-family: "Alex Brush";
@@ -201,7 +214,7 @@ section.section-black h2{
 }
 
 aside{
-    background: #74AFAD;
+    background: #0B3C5D;
     box-shadow: 1px 1px 3px 2px #ccc;
     padding: 1%;
     margin: 2%;
@@ -219,15 +232,12 @@ aside.left-aside{
     float: left;
 }
 .name{
-    color: #190061;
+    color: #D9B310;
 }
 
 .blue-quote{
-    color: yellow;
-}
-
-#be-aware p{
-    text-indent: 10mm;
+    color: #D9B310;
+    font-weight: 600;
 }
 
 .churches img{
@@ -296,6 +306,9 @@ figcaption{
 #be-involved .list li{
     font-size: 1.7vw;
     font-weight: 600;
+    color: #173E43;
+    line-height: 30px;
+    margin-top: 2%;
 }
 
 #be-involved .list-explanation li{
@@ -310,6 +323,7 @@ figcaption{
     list-style-type: square;
     font-size: 1.2vw;
     margin-left: 5%;
+    font-style: oblique;
 }
 
 #be-involved ol li{
@@ -359,7 +373,7 @@ figcaption{
 }
 
 .emphasize{
-    color: #190061;
+    color: #D9B310;
     font-size: 1.5vw;
 }
 
@@ -382,19 +396,19 @@ figcaption{
     text-align: center;
 }
 
-h2.left-h2-small{
-    font-size: 1.8vw;
+#be-involved .left-h2-small{
+    font-size: 1.5vw;
     margin-bottom: -2%;
 }
 
 h4{
-    color: #190061;
+    color: #438496;
     font-size: 1.7vw;
     margin-bottom: -2%;
 }
 
 h3{
-    color: #190061;
+    color: #438496;
     font-size: 1.7vw;
     margin-bottom: -2%;
 }
