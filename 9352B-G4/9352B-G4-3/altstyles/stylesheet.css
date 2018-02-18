@@ -53,8 +53,8 @@ header.logo::before{
     height: auto;
     height: 60px;
     padding: 0 10px 0 40px;
-    border-radius: 50px 50px;
-    margin-left: -2%;
+    transform-origin: top left;
+    transform: skew(-30deg, 0deg);
 }
 
 .logo{
