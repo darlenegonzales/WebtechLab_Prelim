@@ -52,9 +52,9 @@ header.logo::before{
     margin-bottom: auto;
     height: auto;
     height: 60px;
-    padding: 10px 40px 0px 40px;
+    padding: 0 10px 0 40px;
     border-radius: 50px 50px;
-    margin-left: 5%;
+    margin-left: -2%;
 }
 
 .logo{
@@ -65,7 +65,7 @@ header.logo::before{
     width: 100%;  
     z-index: 3;
     position: fixed;
-    height:70px;
+    height:60px;
 }
 
 .navigation{
