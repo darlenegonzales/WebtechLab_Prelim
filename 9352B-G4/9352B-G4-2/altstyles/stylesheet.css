@@ -4,6 +4,15 @@
 }
 
 @font-face{
+    font-family: "League";
+    src: url("font/League-Gothic/LeagueGothic-Regular.otf");
+}
+@font-face{
+    font-family: "Palanquin";
+    src: url("font/Palanquin/palanquin-regular.ttf");
+}
+
+@font-face{
     font-family: Paris;
     src: url(font/Parisienne/Parisienne-Regular.ttf);
 }
@@ -21,11 +30,12 @@ html{
 body{
     margin: 0;    
     text-align: justify;
-    font-family: "Habel Demo";
+    font-family: "Palanquin";
 }
 
 p{
-    font-size: 2vw;
+    font-size: 1.5vw;
+    line-height: 30px;
 }
 
 .logo-ref{
@@ -33,20 +43,9 @@ p{
 }
 
 .logo{
-    display: inline-block;
-    background-color: black;
-    background-size: cover;
-    margin: 0 auto;
-    width: 100%;        
-    z-index: 3;
-    position: fixed;
-    height: 70px;
-}
-
-.logo{
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
-    background: black;
+    background: linear-gradient(to left, #000000, #404040, #808080);
     margin: 0 auto;
     width: 100%;  
     z-index: 3;
@@ -74,8 +73,8 @@ p{
 }
 
 .navigation ul li a:hover{
-    border-bottom: 3px solid #fafafa;
-    color: yellow;
+    border-bottom: 3px solid #000000;
+    color: #000000;
 }
 
 article{
@@ -96,7 +95,7 @@ article{
 	background-repeat: no-repeat;
 	text-align: center;
     height: 60vh;
-    background-color: #F5DEB3;
+    background-color: #efefef;
 }
 
 .title-topcentered-gray{
@@ -151,19 +150,15 @@ footer{
     float: left;
 }
 
-section.section-white h2:not(.left-h2-small){
+section.section-white h2{
     text-align: center;
     font-size: 4vw;
     font-family: "Alex Brush";
     margin-right: 80%;
     border-bottom: 3px dotted black;
-    width: 60%;
+    width: 65%;
     text-align: left;
     float: left;
-}
-
-section.section-white p{
-    margin-right: 15%;
 }
 
 section.section-white li{
@@ -174,10 +169,10 @@ section.section-white li{
 section.section-white{    
     background-image: url(images/b03.png);
     background-attachment: fixed;  
-    background-color: white;
+    background-color: #f4f7f6;
     background-size: cover;
     font-size: 1.5vw;
-    padding: 5% 20% 5% 5%;
+    padding: 5% 30% 5% 5%;
     position: relative;
     color: black;  
 }
@@ -202,27 +197,27 @@ section.section-black h2{
     border-bottom: 3px dotted white;
     width: 60%;
     text-align: left;
-    float: left;
+    float: left;    
+}
+
+aside{
+    background: #74AFAD;
+    box-shadow: 1px 1px 3px 2px #ccc;
+    padding: 1%;
+    margin: 2%;
+    font-style: italic;
+    color: #FFFFFF; 
 }
 
 aside.right-aside{
-    font-family: Paris;
-    background-color: #984b43;
-    font-size: 1vw;
-    padding: 2%;
-    color: white;
-    margin-right: 15%;
+    width: 60%;
+    float: right;
 }
 
 aside.left-aside{
-    font-family: Paris;
-    background-color: #984b43;
-    font-size: 1vw;
-    padding: 2%;
-    color: white;
-    margin-right: 15%;
+    width: 60%;
+    float: left;
 }
-
 .name{
     color: #190061;
 }
@@ -231,20 +226,12 @@ aside.left-aside{
     color: yellow;
 }
 
-#laws h4{
-    color: #190061
-}
-
-#laws h3{
-    color: #190061
-}
-
 #be-aware p{
     text-indent: 10mm;
 }
 
 .churches img{
-    width: 70%;
+    width: 60%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -264,7 +251,7 @@ aside.left-aside{
 }
 
 .be-aware-img img{
-    width: 70%;
+    width: 60%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -274,7 +261,7 @@ aside.left-aside{
 }
 
 .be-involved-img img{
-    width: 70%;
+    width: 60%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -284,7 +271,7 @@ aside.left-aside{
 }
 
 .photos img{
-    width: 70%;
+    width: 60%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -293,87 +280,45 @@ aside.left-aside{
     border-radius: 50%;
 }
 
-.churches h6, figcaption{
+figcaption{
     text-align: center;
+    font-size: 1.5vw;
+    line-height: 35px;
 }
 
-.photos h6, figcaption{
-    text-align: center;
-}
-
-.be-aware-img h6, figcaption{
-    text-align: center;
-}
-
-.be-involved-img h6, figcaption{
-    text-align: center;
-}
-
-.history-img h6, figcaption{
-    text-align: center;
-}
-
-
-.churches h6{
-    margin: 0;
-    font-size: 1.2vw;
+#be-involved .list-explanation{
+    font-size: 1.4vw;
+    margin-left: 5%; 
+    margin-top: -2%;
     font-weight: 100;
 }
 
-.history-img h6{
-    margin: 0;
-    font-size: 1.2vw;
+#be-involved .list li{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+#be-involved .list-explanation li{
+    font-size: 1.4vw;
     font-weight: 100;
+    margin-left: -10%;
+    margin-top: 2%;
+    list-style-type: none;
 }
 
-
-.photos h6{
-    margin: 0;
+#be-involved .sub-list li{
+    list-style-type: square;
     font-size: 1.2vw;
-    font-weight: 100;
+    margin-left: 5%;
 }
 
-.be-aware-img h6{
-    margin: 0;
-    font-size: 1.2vw;
-    font-weight: 100;
-}
-
-.be-involved-img h6{
-    margin: 0;
-    font-size: 1.2vw;
-    font-weight: 100;
-}
-
-
-.churches figcaption{
-    font-size: 1.7vw;
-}
-
-.history-img figcaption{
-    font-size: 1.7vw;
-}
-
-.photos figcaption{
-    font-size: 1.7vw;
-}
-
-.be-aware-img figcaption{
-    font-size: 1.7vw;
-}
-
-.be-involved-img figcaption{
-    font-size: 1.7vw;
-}
-#be-involved p{
-    color: black;
-    font-size: 2vw;
+#be-involved ol li{
+    margin: 2%;
 }
 
 #about-us{
     width: 60%;
     height: 600px;
-    
 }
 
 #about-us h2{
@@ -383,16 +328,17 @@ aside.left-aside{
 #about-us p{
     font-size: 1.2vw;
     float: left;
-    margin-top: 10%;
 }
 
 #about-us h6{
+    display: none;
+}
+
+#about-us nav::before{
+    content: "View our other page:";
     float: left;
-    margin-right: 5%;
-    margin-bottom: 0;
-    margin-top: 10%;
-    font-weight: 100;
-    font-size: 1.1vw;
+    font-size: 1vw;
+    margin-top: 5%;
 }
 
 #about-us figure img{
@@ -409,36 +355,47 @@ aside.left-aside{
     float: left;
     padding: 1%;
     margin: 1%;
+    border-radius: 60px 60px;
 }
 
 .emphasize{
     color: #190061;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .white-quote{
     font-size: 1.6vw;
+    font-family: Paris;
 }
 
 .quote-credit{
-    padding-left: 70%;
-    font-size: 1.5vw;
+    float: right;
+    font-size: 1.2vw;
+    font-family: Paris;
 }
 
-h2.left-h2{
+.credit-photo{
+    margin-bottom: -1%;
+    margin-top: 0;
+    font-size: 1vw;
+    font-weight: 100;
     text-align: center;
-    font-size: 4vw;
-    font-family: "Alex Brush";
-    margin-right: 80%;
-    border-bottom: 3px dotted black;
-    color: black;
-    text-align: left;
-    float:left;
+}
+
+h2.left-h2-small{
+    font-size: 1.8vw;
+    margin-bottom: -2%;
 }
 
 h4{
-    color: black;
-    font-size: 2vw;
+    color: #190061;
+    font-size: 1.7vw;
+    margin-bottom: -2%;
+}
+
+h3{
+    color: #190061;
+    font-size: 1.7vw;
     margin-bottom: -2%;
 }
 
